@@ -42,16 +42,16 @@
                   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav ">
                       <li class="nav-item">
-                        <a data-gtm-action="Click" data-gtm-category="Navigation" data-gtm-label="Home" class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a  class="nav-link active" aria-current="page" href="index.html">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a data-gtm-action="Click" data-gtm-category="Navigation" data-gtm-label="Product" class="nav-link" href="#products">Products</a>
+                        <a class="nav-link" href="#products">Products</a>
                       </li>
                       <li class="nav-item">
-                        <a data-gtm-action="Click" data-gtm-category="Navigation" data-gtm-label="Video" class="nav-link" href="#videos">Videos</a>
+                        <a class="nav-link" href="#videos">Videos</a>
                       </li>
                       <li class="nav-item">
-                        <a data-gtm-action="Click" data-gtm-category="Navigation" data-gtm-label="Sponsors" class="nav-link" href="#sponsors">Sponsors</a>
+                        <a class="nav-link" href="#sponsors">Sponsors</a>
                       </li>
                     </ul>
                   </div>
@@ -249,7 +249,14 @@
         </div>
     </div>
     <!-- END: SPONSORS -->
-   
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+        document.querySelectorAll(".nav-items").forEach((item) =>{
+          
+          node.setAttribute("data-gtm-action", "Click");
+        });
+
+    </script>
   </body>
 </html>
